@@ -1,3 +1,5 @@
+##REQUIRES DCX.DLL##https://www.tg007.net/file-1713##
+
 on *:START: { wbar }
 alias wbar {
   if ($dialog(wbar)) { dialog -x wbar }
