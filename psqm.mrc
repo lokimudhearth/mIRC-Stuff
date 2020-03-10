@@ -1,3 +1,7 @@
+##REQUIRES DCX.DLL##https://www.tg007.net/file-1713##
+
+
+
 #psqm on
 
 alias psqm {
