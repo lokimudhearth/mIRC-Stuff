@@ -26,12 +26,12 @@ on *:dialog:psqm:init:*: {
 
 alias psqm_cb {
   if ($2 == sclick) && ($3 == 4) {
-    .query %qnick 3{14- 3Q14uery request accepted3. 14-3}
+    .query %qnick {- Query request accepted. -}
     dialog -x psqm
     unset %qnick
   }
   elseif ($2 == sclick) && ($3 == 5) {
-    .query %qnick 3{14- 3Q14uery request denied3. 3I14 am currently too busy to accept your PM3. 3P14lease try again later3. 14-3}
+    .query %qnick {- Query request denied. I am currently too busy to accept your PM. Please try again later. -}
     window -c  %qnick
     dialog -x psqm 
     .ignore -wu120 %qnick
@@ -44,11 +44,11 @@ alias psqm_cb {
 
 on *:open:?:*: {
   set %qnick $nick
-  .query %qnick 3{14- 3Y14our query has been sent3. 3P14lease be patient while i decide whether or not to respond3... 14-3}
-  echo -a  Incoming Message From:3 $nick $+ ( $+ $address $+ )
+  .query %qnick {- Your query has been sent. Please be patient while i decide whether or not to respond... -}
+  echo -a Incoming Message From: $nick $+ ( $+ $address $+ )
   psqm
-  xdid -t psqm 1 3{14- 3S14ender3:3 $nick 14-3}
-  xdid -t psqm 2 3{14- 3T14ime3:3 $time(h:nn TT) 14-3}
+  xdid -t psqm 1 {- Sender: $nick -}
+  xdid -t psqm 2 {- Time: $time(h:nn TT) -}
 }
 
 #psqm end
