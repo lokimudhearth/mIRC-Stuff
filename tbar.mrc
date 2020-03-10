@@ -1,3 +1,5 @@
+##REQUIRES DCX.DLL##https://www.tg007.net/file-1713##
+
 on *:load: { 
   .echo -aq $input(Author: Protheus $+ $crlf $+ $crlf $+ Addon: Titlebar System $chr(40) $+ v1.0 $+ $chr(41) $+ $crlf $+ $crlf $+ Released on: 1/07/2017 $+ $crlf $+ $crlf $+ Contact: lokiisagod@live.com $+ $crlf $+ $crlf $+ Thank you for using this Addon,igo,Addon: Titlebar System $chr(40) $+ v1.0 $+ $chr(41))
   .echo -s _____________________________________________________
